@@ -2,25 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>CAT Energy</title>
   </head>
   <body class="page-catalog">
 
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="img/logotype-mobile.png" alt="" width="50" height="30">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="" width="202" height="59">
       </a>
-      <h1 class="page-header__head"><b>Cat</b> energy</h1>
       <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Каталог продукции</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-          </ul>
-        </div>
+        <input class="main-nav__toggle visually-hidden" id="burger-toggle" type="checkbox">
+        <label class="main-nav__burger" for="burger-toggle"></label>        
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+        </ul>
       </nav>
     </header>
 
