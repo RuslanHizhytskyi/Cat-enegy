@@ -11,6 +11,12 @@
     padding: 3px 0;
 }
 
+.page-header__logo-image {
+    display: block;
+    width: 191px;
+    height: 40px;
+}
+
 .main-nav__list {
     display: none;
 }
@@ -91,6 +97,11 @@
         padding: 24px 30px;
     }
 
+    .page-header__logo-image {
+        width: 173px;
+        height: 60px;
+    }
+
     .main-nav__burger{
         display: none;
     }
@@ -124,8 +135,15 @@
 
 @media (min-width: 1440px) {
     .page-header {
+        max-width: 1920px;
         padding: 54px 110px;
+        margin: 0 auto;
     }
+
+    .page-header__logo-image {
+        width: 202px;
+    }
+
     .page-index .main-nav__link {
         font-size: 20px;
         color: #ffffff; 

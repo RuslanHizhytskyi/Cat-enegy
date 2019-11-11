@@ -4,7 +4,7 @@
 
     text-align: center;
 
-    background-color: #65a93c;
+    /*background-color: #65a93c;*/
     background:
         url("../img/index-can-mobile@1x.png") no-repeat 50% 80%,
         url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0,
@@ -63,17 +63,20 @@
 }
 
 @media (min-width: 1440px) {
-    .appeal {
+    .appeal  {
+        max-width: 1920px;
         padding-top: 224px;
         padding-bottom: 1px;
+        margin: 0 auto;
         margin-top: -176px;
         margin-bottom: 80px;
+        
 
-        background-color: #65a93c;
+        /*background-color: #65a93c;*/
         background: 
-            url("../img/index-can-desktop@1x.png") no-repeat 63% 85%,
-            url("../img/index-background-desktop@1x.jpg") no-repeat 100% 25px,
-            linear-gradient(to right, #ffffff 50%, #65a93c 50%) no-repeat 0 0;
+            url("../img/index-can-desktop@1x.png") no-repeat /*calc(50% + 115px)*/ 60% 85%,
+            url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0,
+            linear-gradient(to right, #ffffff 48%, #65a93c 48%) no-repeat 0 0;
     }
     .appeal__header {
         padding-top: 0;
