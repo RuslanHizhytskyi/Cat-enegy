@@ -1,49 +1,49 @@
 .map {
-    display: flex;
-    margin: 0 -20px;
+  display: flex;
+  margin: 0 -20px;
 }
 
 .map__link {
-    position: relative;
-    display: block;
-    margin: 0 auto;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 
-    &::after {
-        .be-af();
-        top: calc(50% - 20px);
-        left: calc(50% - 27px);
-        width: 55px;
-        height: 53px;
+  &::after {
+    .be-af();
+    top: calc(50% - 20px);
+    left: calc(50% - 27px);
+    width: 55px;
+    height: 53px;
 
-        background: url("../img/map-pin.png") no-repeat;
-        background-size: contain;
-    }
+    background: url("../img/map-pin.png") no-repeat;
+    background-size: contain;
+  }
 }
 
 .map__image {
-    display: block;
+  display: block;
 }
 
 @media (min-width: 768px) {
-    .map {
-        margin: 0 -30px;
-    }
+  .map {
+    margin: 0 -30px;
+  }
 
-    .map__link::after {
-        top: calc(50% - 30px);
-        left: calc(50% - 48px);
-        width: 96px;
-        height: 106px;
-    }
+  .map__link::after {
+    top: calc(50% - 30px);
+    left: calc(50% - 48px);
+    width: 96px;
+    height: 106px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .map {
-        margin: 0 -110px;
-    }
+  .map {
+    margin: 0 -110px;
+  }
 
-    .map__link::after {
-        left: auto;
-        right: 330px;
-    }
+  .map__link::after {
+    left: auto;
+    right: 330px;
+  }
 }

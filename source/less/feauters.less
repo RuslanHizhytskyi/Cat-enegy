@@ -1,186 +1,186 @@
 .feauters {
-    padding: 0 20px;
-    padding-bottom: 20px;
+  padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 .feauters__header {
-    padding: 0;
-    padding-bottom: 25px;
+  padding: 0;
+  padding-bottom: 25px;
 }
 
 .feauters__list {
-    .reset-list();
+  .reset-list();
 }
 
 .feauters__item {
-    position: relative;
-    min-height: 60px;
-    margin-bottom: 20px;
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
 
-    &::before {
-        .be-af();
-        
-        width: 60px;
-        height: 60px;
+  &::before {
+    .be-af();
+    
+    width: 60px;
+    height: 60px;
 
-        background-color: #68b738;
-    }
+    background-color: #68b738;
+  }
 
-    &--first::after {
-        .be-af();
-        top: 0;
-        
-        width: 60px;
-        height: 60px;
+  &--first::after {
+    .be-af();
+    top: 0;
+    
+    width: 60px;
+    height: 60px;
 
-        background: url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
-    }
+    background: url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
+  }
 
-    &--second::after {
-        .be-af();
-        top: 0;
-        
-        width: 60px;
-        height: 60px;
+  &--second::after {
+    .be-af();
+    top: 0;
+    
+    width: 60px;
+    height: 60px;
 
-        background: url("../img/advantage-powder@1x.png") no-repeat 50% 50%;
-    }
+    background: url("../img/advantage-powder@1x.png") no-repeat 50% 50%;
+  }
 
-    &--third::after {
-        .be-af();
-        top: 0;
-        
-        width: 60px;
-        height: 60px;
+  &--third::after {
+    .be-af();
+    top: 0;
+    
+    width: 60px;
+    height: 60px;
 
-        background: url("../img/advantage-dining@1x.png") no-repeat 50% 50%;
-    }
+    background: url("../img/advantage-dining@1x.png") no-repeat 50% 50%;
+  }
 
-    &--fourth::after {
-        .be-af();
-        top: 0;
-        
-        width: 60px;
-        height: 60px;
+  &--fourth::after {
+    .be-af();
+    top: 0;
+    
+    width: 60px;
+    height: 60px;
 
-        background: url("../img/advantage-clock@1x.png") no-repeat 50% 50%;
-    }
+    background: url("../img/advantage-clock@1x.png") no-repeat 50% 50%;
+  }
 }
 
 .feauters__content {
-    padding-left: 80px;
-    margin: 0;
+  padding-left: 80px;
+  margin: 0;
 
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
 }
 
 @media (min-width: 768px) {
-    .feauters {
-        padding: 0 30px;
+  .feauters {
+    padding: 0 30px;
 
-        border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .feauters__header{
+    padding: 30px 0;
+    margin-bottom: 40px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .feauters__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-bottom: 35px;
+  }
+
+  .feauters__item {
+    width: 45.76%;
+    min-height: 230px;
+
+    &--first,
+    &--second {
+      margin-bottom: 90px;
     }
 
-    .feauters__header{
-        padding: 30px 0;
-        margin-bottom: 40px;
-
-        font-size: 60px;
-        line-height: 60px;
+    &::before {
+      width: 80px;
+      height: 80px;
     }
 
-    .feauters__list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    &--first::after,
+    &--second::after,
+    &--third::after,
+    &--fourth::after {
+      width: 80px;
+      height: 80px;
 
-        padding-bottom: 35px;
+      background-position: 50% 50%;
+    }
+  }
+
+  .feauters__content {
+    width: 75.926%;
+    padding-left: 0;
+    padding-top: 115px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 92px;
+      left: calc(100% - 200px);
+
+      font-family: "Oswald", Arial, sans-serif;
+      font-size: 280px;
+      color: #f2f2f2;
     }
 
-    .feauters__item {
-        width: 45.76%;
-        min-height: 230px;
-
-        &--first,
-        &--second {
-            margin-bottom: 90px;
-        }
-
-        &::before {
-            width: 80px;
-            height: 80px;
-        }
-
-        &--first::after,
-        &--second::after,
-        &--third::after,
-        &--fourth::after {
-            width: 80px;
-            height: 80px;
-    
-            background-position: 50% 50%;
-        }
+    &--first::before {
+      content: "1";
     }
 
-    .feauters__content {
-        width: 75.926%;
-        padding-left: 0;
-        padding-top: 115px;
-
-        font-size: 16px;
-        line-height: 24px;
-
-        &::before {
-            position: absolute;
-            z-index: -1;
-            top: 92px;
-            left: calc(100% - 200px);
-
-            font-family: "Oswald", Arial, sans-serif;
-            font-size: 280px;
-            color: #f2f2f2;
-        }
-
-        &--first::before {
-            content: "1";
-        }
-
-        &--second::before {
-            content: "2";
-        }
-
-        &--third::before {
-            content: "3";
-        }
-
-        &--fourth::before {
-            content: "4";
-        }
+    &--second::before {
+      content: "2";
     }
+
+    &--third::before {
+      content: "3";
+    }
+
+    &--fourth::before {
+      content: "4";
+    }
+  }
 }
 
 @media (min-width: 1440px) {
-    .feauters {
-        max-width: 1440px;
-        padding: 0 110px;
-        margin: 0 auto;
+  .feauters {
+    max-width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
 
-        border-bottom: none;
+    border-bottom: none;
+  }
+
+  .feauters__item {
+    width: 20.08%;
+  }
+
+  .feauters__content {
+    width: 100%;
+
+    &::before {
+      left: calc(100% - 120px);
     }
-
-    .feauters__item {
-        width: 20.08%;
-    }
-
-    .feauters__content {
-        width: 100%;
-
-        &::before {
-            left: calc(100% - 120px);
-        }
-    }
+  }
 }
 

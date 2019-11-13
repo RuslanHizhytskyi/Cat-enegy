@@ -1,252 +1,252 @@
 .example {
-    padding: 0 20px;
+  padding: 0 20px;
 
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .example__content {
-    margin: 0;
-    margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 30px;
 
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: none;
 }
 
 .example__wrapper--numbers {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__result {
-    position: relative;
-    width: 38.75%;
-    padding: 16px 0;
-    margin: 0;
-    margin-bottom: 35px;
+  position: relative;
+  width: 38.75%;
+  padding: 16px 0;
+  margin: 0;
+  margin-bottom: 35px;
 
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
 
-    border: 1px solid #cdcdcd;
-    border-radius: 2px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
 
-    &::before {
-        position: absolute;
-        left: 14.52%;
-        top: calc(100% - 8px);
+  &::before {
+    position: absolute;
+    left: 14.52%;
+    top: calc(100% - 8px);
 
-        width: 70.96%;
-        height: 30px;
+    width: 70.96%;
+    height: 30px;
 
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 12px;
-        text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: none;
 
-        background-color: #f2f2f2;
-    }
+    background-color: #f2f2f2;
+  }
 
-    &--kg::before {
-        content: "снижение веса";
-    }
+  &--kg::before {
+    content: "снижение веса";
+  }
 
-    &--days::before {
-        content: "затрачено времени";
-    }
+  &--days::before {
+    content: "затрачено времени";
+  }
 }
 
 .example__course-price {
-    margin: 0;
+  margin: 0;
 
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
 
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .example__wrapper-before-after {
-    display: flex;
-    padding-top: 310px;
+  display: flex;
+  padding-top: 310px;
 }
 
 .example__was-now {
-    padding-bottom: 35px;
+  padding-bottom: 35px;
 
-    font-size: 24px;
-    line-height: 24px;
+  font-size: 24px;
+  line-height: 24px;
 
-    &--was {
-        margin-right: 21.43%;
-        margin-left: auto;
-    }
+  &--was {
+    margin-right: 21.43%;
+    margin-left: auto;
+  }
 
-    &--now {
-        margin-left: 21.43%;
-        margin-right: auto;
-    }
+  &--now {
+    margin-left: 21.43%;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 768px) {
-    .example {
-        padding: 0 30px;
-    
-        background-color: #ffffff;
+  .example {
+    padding: 0 30px;
+
+    background-color: #ffffff;
+  }
+
+  .example__header {
+    padding: 50px 0;
+
+    font-size: 60px;
+  }
+
+  .example__content {
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__wrapper--info {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 250px;
+  }
+
+  .example__wrapper--numbers {
+    width: 51.84%;
+  }
+
+  .example__result {
+    width: 44.26%;
+    padding: 18px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      width: auto;
+      padding: 0 8px;
+
+      background-color: #ffffff;
     }
 
-    .example__header {
-        padding: 50px 0;
-
-        font-size: 60px;
+    &--kg::before {
+      left: calc(50% - 50px);
     }
 
-    .example__content {
-        margin-bottom: 55px;
+    &--days::before {
+      left: calc(50% - 62px);
+    }
+  }
 
-        font-size: 16px;
-        line-height: 24px;
+  .example__course-price {
+    width: 180px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 36px;
+    text-align: right;
+  }
+
+  .example__wrapper-before-after {
+    padding-top: 370px;
+    margin: 0 -30px;
+
+    background-color: #f2f2f2;
+  }
+
+  .example__was-now {
+    padding-bottom: 7px;
+    margin-bottom: 70px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border-bottom: 1px dotted #cdcdcd;
+
+    &--was {
+      margin-right: auto;
+      margin-left: 13%;
     }
 
-    .example__wrapper--info {
-        display: flex;
-        justify-content: space-between;
-
-        padding-bottom: 250px;
+    &--now {
+      margin-left: auto;
+      margin-right: 13%;
     }
-
-    .example__wrapper--numbers {
-        width: 51.84%;
-    }
-
-    .example__result {
-        width: 44.26%;
-        padding: 18px 0;
-
-        font-size: 36px;
-        line-height: 36px;
-
-        &::before {
-            width: auto;
-            padding: 0 8px;
-
-            background-color: #ffffff;
-        }
-
-        &--kg::before {
-            left: calc(50% - 50px);
-        }
-
-        &--days::before {
-            left: calc(50% - 62px);
-        }
-    }
-
-    .example__course-price {
-        width: 180px;
-        margin: 0;
-
-        font-size: 20px;
-        line-height: 36px;
-        text-align: right;
-    }
-
-    .example__wrapper-before-after {
-        padding-top: 370px;
-        margin: 0 -30px;
-
-        background-color: #f2f2f2;
-    }
-
-    .example__was-now {
-        padding-bottom: 7px;
-        margin-bottom: 70px;
-
-        font-size: 20px;
-        line-height: 20px;
-
-        border-bottom: 1px dotted #cdcdcd;
-
-        &--was {
-            margin-right: auto;
-            margin-left: 13%;
-        }
-    
-        &--now {
-            margin-left: auto;
-            margin-right: 13%;
-        }
-    }
+  }
 }
 
 @media (min-width: 1440px) {
-    .example {
-        display: flex;
-        flex-wrap: wrap;
+  .example {
+    display: flex;
+    flex-wrap: wrap;
 
-        max-width: 1440px;
-        padding: 0 110px;
-        margin: 0 auto;
-    
-        background-color: #f2f2f2;
+    max-width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+
+    background-color: #f2f2f2;
+  }
+
+  .example__header {
+    box-sizing: content-box;
+    width: 100%;
+    padding: 10px 110px;
+    padding-bottom: 80px;
+    margin: 0 -110px;
+
+    background-color: #ffffff;
+  }
+
+  .example__wrapper-before-after,
+  .example__wrapper {
+    width: 50%;
+  }
+
+  .example__content {
+    width: 71.31%;
+    padding-top: 75px;
+    margin-bottom: 70px;
+  }
+
+  .example__wrapper--info {
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
+
+  .example__wrapper--numbers {
+    width: 60.16%;
+  }
+
+  .example__result {
+    margin-bottom: 50px;
+
+    &::before {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .example__course-price {
+    display: flex;
+    justify-content: space-between;
+    width: 54.1%;
+  }
+
+  .example__wrapper-before-after {
+    min-height: 460px;
+    margin: 0;
+  }
+
+  .example__was-now {
+    &--was {
+      margin-left: 40px;
     }
 
-    .example__header {
-        box-sizing: content-box;
-        width: 100%;
-        padding: 10px 110px;
-        padding-bottom: 80px;
-        margin: 0 -110px;
-
-        background-color: #ffffff;
+    &--now {
+      margin-right: 40px;
     }
-
-    .example__wrapper-before-after,
-    .example__wrapper {
-        width: 50%;
-    }
-
-    .example__content {
-        width: 71.31%;
-        padding-top: 75px;
-        margin-bottom: 70px;
-    }
-
-    .example__wrapper--info {
-        flex-wrap: wrap;
-        padding-bottom: 70px;
-    }
-
-    .example__wrapper--numbers {
-        width: 60.16%;
-    }
-
-    .example__result {
-        margin-bottom: 50px;
-
-        &::before {
-            background-color: #f2f2f2;
-        }
-    }
-
-    .example__course-price {
-        display: flex;
-        justify-content: space-between;
-        width: 54.1%;
-    }
-
-    .example__wrapper-before-after {
-        min-height: 460px;
-        margin: 0;
-    }
-
-    .example__was-now {
-        &--was {
-            margin-left: 40px;
-        }
-    
-        &--now {
-            margin-right: 40px;
-        }
-    }
+  }
 }
