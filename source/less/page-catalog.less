@@ -1,4 +1,4 @@
-.page-catalog {  
+.page-catalog {
   min-width: 320px;
 
   margin: 0;
@@ -10,17 +10,25 @@
 
   background-color: #ffffff;
 
+  .page-header {
+    text-transform: uppercase;
+  }
+
   .adress {
     background-color: #f2f2f2;
+  }
+
+  @media (min-width: 768px){
+    .adress__header {
+      text-transform: uppercase;
+    }
   }
 
   @media (min-width: 1440px) {
     .adress {
       background-color: #ffffff;
     }
-  }
 
-  @media (min-width: 1440px) {
     .related-product {
       margin-bottom: 85px;
     }

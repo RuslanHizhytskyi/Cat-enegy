@@ -36,6 +36,7 @@
     &::before {
       .be-af();
 
+      top: 6px;
       left: 0;
       width: 30px;
       height: 30px;
@@ -67,6 +68,7 @@
     &::before {
       .be-af();
 
+      top: 6px;
       left: 0;
       width: 30px;
       height: 30px;
@@ -194,10 +196,10 @@
   .form {
     padding: 0 30px;
   }
-  
+
   .form__header {
     padding: 40px 0;
-  
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -205,25 +207,30 @@
   .form__message {
     padding: 0 40px;
     margin-bottom: 60px;
-  
+
     font-size: 20px;
     line-height: 30px;
   }
 
-  .form__label {  
+  .form__label {
     margin-bottom: 20px;
 
     font-size: 20px;
+
+    &--last {
+      margin: 0;
+    }
+
     &--radio {
       padding: 17px 0;
       padding-left: 85px;
       margin: 0;
-  
+
       &::before {
         left: 0;
         width: 40px;
         height: 40px;
-  
+
         border: 1px solid #cecece;
         border-radius: 50%;
       }
@@ -231,10 +238,11 @@
 
     &--email ,
     &--tel {
+      position: relative;
       margin: 0;
 
       svg {
-        right: 88px;
+        right: 20px;
       }
 
       .form__input {
@@ -252,9 +260,7 @@
       margin-bottom: 32px;
 
       &::before {
-        .be-af();
-
-        left: 0;
+        top: 0;
         width: 40px;
         height: 40px;
 
@@ -276,11 +282,11 @@
     top: 7px;
   }
 
-  .form__list {  
+  .form__list {
     &--radio {
       padding: 19px 24px;
       margin: 0 40px;
-  
+
       border: 1px solid #ededed;
     }
 
@@ -299,12 +305,13 @@
   }
 
   .form__input {
-    padding: 20px 15px;
+    padding: 13px 15px;
     margin-left: 15px;
   }
-  
+
   .form__wrapper {
-    &--first{
+    &--first {
+      padding: 0 40px;
       margin-bottom: 70px;
     }
 
@@ -326,26 +333,26 @@
   .form__section-header {
     padding: 0;
     margin: 65px -30px;
-  
+
     font-size: 36px;
     line-height: 36px;
 
     br {
       display: none;
     }
-  
+
     &::after {
       margin-top: 18px;
       margin-left: 40px;
     }
 
     &::before {
-      content: "";  
+      content: "";
       height: 3px;
       width: 30px;
       margin-top: 18px;
       margin-right: 40px;
-  
+
       background-color: #68b738;
     }
   }
@@ -364,13 +371,97 @@
 
     font-size: 20px;
   }
-  
+
   .form__lable-info {
     width: 45.2%;
     padding: 18px;
     margin: 0;
-  
+
     font-size: 16px;
     text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
+  .form__header {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .form__message {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  .form__label {
+    &--email ,
+    &--tel {
+      width: 46.72%;
+      margin: 0;
+    }
+  }
+
+  .form__wrapper {
+    width: 100%;
+    padding: 0;
+
+    &--first {
+      width: 46.72%;
+      margin: 0;
+    }
+
+    &--second {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--third {
+      margin-top: -20px;
+      margin-bottom: 82px;
+    }
+  }
+
+  .form__list {
+    width: 46.72%;
+    margin: 0;
+
+    &--checkbox {
+      width: 100%;
+      margin-bottom: 45px;
+
+      li {
+        width: 20%
+      }
+    }
+  }
+
+  .form__section-header {
+    width: 1440px;
+    margin: 60px -110px;
+
+    &::before {
+      width: 70px;
+    }
+  }
+
+  .form__button {
+    width: 46.72%;
+  }
+
+  .form__lable-info {
+    width: 46.72%;
   }
 }

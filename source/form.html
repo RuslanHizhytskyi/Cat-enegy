@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <title>CAT Energy</title>
+  <script>document.createElement("picture")</script>
+  <script src="/js/picturefill.min.js" async></script>
   </head>
   <body class="page-form">
     <header class="page-header">
@@ -32,7 +36,7 @@
         <div class="form__wrapper form__wrapper--first">
           <label class="form__label">Имя:*<input class="form__input" type="text" name="name" placeholder="Барсик"></label>
           <label class="form__label">Вес (кг):*<input class="form__input" type="number" name="weight" placeholder="7"></label>
-          <label class="form__label">Возраст (лет):<input class="form__input" type="number" name="age" placeholder="7"></label>
+          <label class="form__label form__label--last">Возраст (лет):<input class="form__input" type="number" name="age" placeholder="7"></label>
         </div>
         <ul class="form__list form__list--radio">
           <li><label class="form__label form__label--radio"><input class="form__radio visually-hidden" type="radio" name="course" value="Losing-weight">Похудение<span class="form__radio-icon"></span></label></li>

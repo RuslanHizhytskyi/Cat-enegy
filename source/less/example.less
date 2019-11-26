@@ -1,4 +1,5 @@
 .example {
+  position: relative;
   padding: 0 20px;
 
   background-color: #f2f2f2;
@@ -78,13 +79,54 @@
   line-height: 24px;
 
   &--was {
-    margin-right: 21.43%;
+    margin-right: 21%;
     margin-left: auto;
   }
 
   &--now {
-    margin-left: 21.43%;
+    margin-left: 21%;
     margin-right: auto;
+  }
+}
+
+.example__image-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 350px;
+  margin-left: -20px;
+}
+
+.example__toggle {
+  .be-af();
+  bottom: 40px;
+  right: 37%;
+  width: 26%;
+  height: 12px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+
+  &::before {
+    .be-af();
+    left: 3px;
+    top: 2px;
+    width: 50%;
+    height: 6px;
+
+    background-color: #68b738;
+    border-radius: 3px;
+  }
+}
+
+.example__image {
+  position: absolute;
+  bottom: 85px;
+  right: calc(50% - 160px);
+
+  &--after {
+    z-index: -1;
   }
 }
 
@@ -175,6 +217,52 @@
     &--now {
       margin-left: auto;
       margin-right: 13%;
+    }
+  }
+
+  .example__image-container {
+    min-height: 650px;
+    margin-left: -30px;
+  }
+
+  .example__toggle {
+    bottom: 80px;
+    right: 22%;
+    width: 56%;
+    height: 6px;
+
+    background-color: #dcdcdc;
+    border-radius: 2px;
+    border: none;
+
+    &::before {
+      left: calc(50% - 17px);
+      top: -1px;
+      width: 8px;
+      height: 8px;
+
+      background-color: #68b738;
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 13px #ffffff,
+        0 0 2px 14px #cdcdcd;
+    }
+  }
+
+  .example__image {
+    position: absolute;
+    bottom: 115px;
+    right: calc(50% - 345px);
+    //width: 50%;
+    margin: 0 auto;
+
+    &--after {
+      z-index: 0;
+      left: calc(50% - 345px);
+    }
+
+    &--before {
+
     }
   }
 }
