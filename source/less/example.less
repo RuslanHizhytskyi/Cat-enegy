@@ -251,18 +251,27 @@
 
   .example__image {
     position: absolute;
+    display: block;
     bottom: 115px;
-    right: calc(50% - 345px);
-    //width: 50%;
+    width: 690px;
+    height: 520px;
     margin: 0 auto;
+
 
     &--after {
       z-index: 0;
-      left: calc(50% - 345px);
+      right: calc(50% - 345px);
+
+      clip: rect(auto 690px auto 345px);
+      overflow: hidden;
     }
 
     &--before {
+      z-index: 1;
+      left: calc(50% - 345px);
 
+      clip: rect(auto 345px auto 0px);
+      overflow: hidden;
     }
   }
 }
@@ -335,6 +344,36 @@
 
     &--now {
       margin-right: 40px;
+    }
+  }
+
+  .example__image-container {
+    right: 70px;
+    min-height: 650px;
+    width: 690px;
+    margin-left: auto;
+  }
+
+  .example__toggle {
+    bottom: 88px;
+    right: 150px;
+    width: 400px;
+
+    &::before {
+      left: calc(50% + 15px);
+    }
+  }
+
+  .example__image {
+    width: 690px;
+
+
+    &--after {
+      clip: rect(auto 690px auto 365px);
+    }
+
+    &--before {
+      clip: rect(auto 365px auto 0px);
     }
   }
 }
